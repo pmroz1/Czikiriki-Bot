@@ -1,28 +1,29 @@
 {
-  "name": "czikiriki-bot",
-  "version": "1.0.0",
-  "description": "\u0016Czikiriki Bot, is an Discord bot designed to move sent files to designed channels",
-  "main": "bot.js",
-  "scripts": {
-    "test": "test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ReformedMrozu/Czikiriki-Bot.git"
-  },
-  "keywords": [
-    "discord",
-    "node",
-    "bot",
-    "discord.js"
-  ],
-  "author": "Piotr Mróz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ReformedMrozu/Czikiriki-Bot/issues"
-  },
-  "homepage": "https://github.com/ReformedMrozu/Czikiriki-Bot#readme",
-  "dependencies": {
-    "discord.js": "^12.4.1"
-  }
+    "name": "czikiriki-bot",
+    "version": "1.0.0",
+    "description": "\u0016Czikiriki Bot, is an Discord bot designed to move sent files to designed channels",
+    "main": "bot.js",
+    "scripts": {
+        "start": "bot.js",
+        "test": "test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ReformedMrozu/Czikiriki-Bot.git"
+    },
+    "keywords": [
+        "discord",
+        "node",
+        "bot",
+        "discord.js"
+    ],
+    "author": "Piotr Mróz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ReformedMrozu/Czikiriki-Bot/issues"
+    },
+    "homepage": "https://github.com/ReformedMrozu/Czikiriki-Bot#readme",
+    "dependencies": {
+        "discord.js": "^12.4.1"
+    }
 }
