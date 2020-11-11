@@ -11,18 +11,20 @@ bot.on('ready', () => {
 })
 
 bot.on('message', (message) => {
-    let args = message.content.substring(PREFIX.length).split(" ")
     let url = ''
-
     if (message.content === '!a') {
-        message.attachments.forEach(attachment => {
-            url = attachment.url;
-        });
+        if (message.attachments.size > 0) {
+            message.attachments.forEach(attachment => {
+                url = attachment.url;
+            });
 
-        let channel = bot.channels.cache.get(settings.AttachmentChannelID);
-        const attachment = new MessageAttachment(url);
+            let channel = bot.channels.cache.get(settings.AttachmentChannelID);
+            const attachment = new MessageAttachment(url);
 
-        channel.send(attachment);
+            channel.send(attachment);
+        } else {
+            message.reply("um, Sir where is yours attachment?")
+        }
     }
 })
 
